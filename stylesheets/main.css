@@ -1,0 +1,626 @@
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.text-muted { /* overrides Bootstrap class, text set to be gray @gray-base #000, @gray-light lighten(@gray-base, 46.7%) */
+  color: #777
+}
+
+.text-primary {
+  color: #fed136; /* lightest yellow */
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.75
+}
+
+p.large {
+  font-size: 16px
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0
+}
+
+a {
+  color: #076490; /* darker turquoise */
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #035875; /* darker turquoise */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700
+}
+
+.img-centered {
+  margin: 0 auto
+}
+
+.bg-light-gray { /* Used in <section> #portfolio and #team */
+  background-color: #f7f7f7; /* Light gray used for background */
+}
+
+/* ==================== Bootstrap Buttons ==================== */
+.btn-primary {
+  color: #fff;
+  background-color: #076490; /* turquoise */
+  border-color: #076490;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #035875; /* darker turquoise */
+  border-color: #035875;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #fed136; /* lightest yellow */
+  border-color: #fed136
+}
+.btn-primary .badge { /*.badge not defined in HTML */
+  color: #fed136; /* lightest yellow */
+  background-color: #fff
+}
+.btn-xl {
+  color: #fff;
+  background-color: #076490; /* turquoise */
+  border-color: #076490;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: #fff;
+  background-color: #035875; /* darker turquoise */
+  border-color: #035875;
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color: #fed136; /* lightest yellow */
+  border-color: #fed136
+}
+.btn-xl .badge { /* .badge is not defined in HTML */
+  color: #fed136; /* lightest yellow */
+  background-color: #fff
+}
+
+
+/* ==================== Navbar ==================== */
+/* Screen size is not defined here, ie. for all screens, however there is a media query below for min-width 768px, hence these settings are meant for smaller screen sizes (than 768px). */
+.navbar-default {
+  background-color: #222; /* dark gray near black */
+  border-color: transparent
+}
+
+/* Navbar-header */
+/* a .navbar-brand after button */
+.navbar-default .navbar-brand {
+  color: #00BEFE; /* light sky blue*/
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #3AB1F3; /* slightly darker light sky blue */
+}
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, .02)
+}
+
+/* Button .navbar-toggle */
+.navbar-default .navbar-toggle {
+  background-color: #fed136; /* lightest yellow */
+  border-color: #fed136
+}
+
+/* Button .navbar-toggle span */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fed136; /* lightest yellow */
+}
+
+/* Right-side of navbar */
+.navbar-default .nav li a {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff
+}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  color: #00BEFE; /* light sky blue */
+  outline: 0
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: #fff;
+  background-color: #00BEFE; /* light sky blue */
+}
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #3AB1F3; /* light sky blue */
+}
+
+/* When screen size is at least 768px, ie. for larger screens */
+@media (min-width:768px) {
+  .navbar-default {
+    background-color: rgba(0, 0, 0, 0.6); /* This is where the navbar is set transparent */
+    padding: 25px 0;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+    border: 0
+  }
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+  }
+  .navbar-default .navbar-nav>.active>a {
+    border-radius: 3px; /* Makes the navbar links looks like buttons with rounded corners */
+  }
+}
+
+
+/* ==================== Header ==================== */
+/* For <768px screen sizes */
+header {
+  background-image: url(https://dl.dropboxusercontent.com/s/nyi6ogep97y9ffq/cover_image.png);
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center left; /* horizontal vertical */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff
+}
+header .intro-text { /* div for header text */
+  padding-top: 100px;
+  padding-bottom: 50px
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 5px;
+  color: black;
+}
+header .intro-text .intro-lead-in-title {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 25px;
+  color: #666;
+}
+header .intro-text .intro-heading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* For larger than 768px screen sizes */
+@media (min-width:768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 5px; /* Defaults to 25px as defined in general definitions */
+    color: black;
+  }
+  header .intro-text .intro-lead-in-title {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 25px;
+    color: #666;
+  }
+  header .intro-text .intro-heading {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 50px;
+    color: #444;
+  }
+}
+
+
+/* ==================== Sections ==================== */
+/* General section definitions */
+section {
+  padding: 100px 0
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px
+}
+section h3.section-subheading-muted {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+  color: #aaa;
+}
+
+@media (min-width:768px) {
+  section {
+    padding: 150px 0
+  }
+}
+
+
+/* ==================== Portfolio Section ==================== */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0
+}
+#portfolio .portfolio-item .portfolio-link { /* .portfolio-link for the <a> modal */
+  display: block;
+  position: relative; /* not sure why absolute */
+  max-width: 400px; /* sets a size here so that width of children can use percentage */
+  margin: 0 auto
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, .9); /* same as #fed136 lightest yellow, with 0.9 opacity, 0 transparent 1 opague  */
+  position: absolute; /* not sure why relative */
+  width: 100%; /* can use percentage because inherit size contraints by parent class .portfolio-link */
+  height: 100%;
+  opacity: 0; /* initially fully transparent */
+  /* The transition property is a shorthand property used to represent up to four transition-related longhand properties:
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1; /* when hover, the div will transition into this state with a duration of 0.5s. Notice the color is set in the parent div .portfolio-hover, but it just can't be seen as it is initally set to transparent, and it is not fully opague, because the color is defined in background: rgba(254, 209, 54, .9) to be only 90% opaque. */
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content { /* .portfolio-hover-content is only a div set up to contain the plus sign */
+  position: absolute; /* not sure why absolute */
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px
+}
+/* h3 h4 does not seem to be defined inside the .portfolio-hover-content class */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0
+}
+#portfolio .portfolio-item .portfolio-caption { /* .portfolio-caption is sibling of <a> .portfolio-link */
+  max-width: 400px; /* setting the width again */
+  margin: 0 auto;
+  background-color: #fff; /* because the background color of section is gray */
+  text-align: center;
+  padding: 25px
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0
+}
+#portfolio * {
+  z-index: 2; /* not sure whether there is a need to set the z-index here. This is the first z-index being set. Larger number has higher priority. */
+  /* Source MDN Understanding z-index */
+  /* Given a homogeneous group of elements without any z-index property, such as the positioned blocks (DIV #1 to #4) in the example, the element's stacking order is their order in the HTML hierarchy, regardless of their position.
+  Standard blocks (DIV #5) in the normal flow, without any positioning property, are always rendered before positioned elements, and appear below them, even if they come later in the HTML hierarchy.
+
+  When no z-index property is specified, elements are rendered on the default rendering layer 0 (zero).
+  If several elements share the same z-index value (i.e. they are placed on the same layer), stacking rules explained in the section Stacking without z-index apply.*/
+}
+
+@media (min-width:767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px
+  }
+}
+
+
+/* ==================== Contact Section ==================== */
+section#contact {
+  background-color: #222; /* dark gray near black */
+  background-image: url(https://dl.dropboxusercontent.com/s/wcte8tfw2t528f5/contact_black_background.png);
+  background-position: center;
+  background-repeat: no-repeat
+}
+section#contact .section-heading {
+  color: #fff
+}
+section#contact .form-group { /* .form-group is class of parent div of each <input> */
+  margin-bottom: 25px
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px
+}
+section#contact .form-group input.form-control { /* .form-control sets input width 100% plus rounded corners */
+  height: auto
+}
+section#contact .form-group textarea.form-control {
+  height: 236px
+}
+section#contact .form-control:focus { /* :focus general means when clicked on or selected with the cursor blinking on it */
+  border-color: #00BEFE; /* light blue sky */
+  box-shadow: none
+}
+section#contact::-webkit-input-placeholder {
+  /* Styling the placeholder text. Only -webkit and -ms and an additional word input. */
+  /* See https://css-tricks.com/almanac/selectors/p/placeholder/ */
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+section#contact:-moz-placeholder { /* moz-placeholder does not have the word input */
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+section#contact::-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+section#contact:-ms-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+section#contact .text-danger { /* Error text in p hidden by jqBootstrapValidation.js */
+  color: #e74c3c
+}
+
+
+/* ==================== Footer ==================== */
+footer {
+  padding: 25px 0;
+  text-align: center
+}
+footer span.copyright {
+  line-height: 40px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none
+}
+footer ul.quicklinks { /* Privacy Terms */
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+}
+ul.social-buttons {
+  margin-bottom: 0
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222; /* dark gray near black */
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  outline: 0;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #076490; /* lightest yellow */
+}
+
+
+/* ==================== General Bootstrap Buttons ==================== */
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: 0
+}
+
+
+/* ==================== Modals ==================== */
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box; /* background-clip lets you control how far a background image or color extends beyond an element's padding or content. See https://css-tricks.com/almanac/properties/b/background-clip/ */
+  -webkit-box-shadow: none;
+  box-shadow: none; /* Redundant */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); /* box-shadow: offset-x | offset-y | blur-radius | spread-radius | color */
+  /* See http://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+  border: 0;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center
+}
+.portfolio-modal .modal-content h2 { /* Above the image */
+  margin-bottom: 15px;
+  font-size: 3em
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px
+}
+.portfolio-modal .modal-content p.item-intro { /* Above the image */
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px
+}
+.portfolio-modal .modal-content ul.list-inline { /* For the Date Client Category */
+  margin-bottom: 30px;
+  margin-top: 0
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer; /* The cursor property specifies the type of cursor to be displayed when pointing on an element. */
+  /* See http://www.w3schools.com/cssref/pr_class_cursor.asp */
+  /* See https://css-tricks.com/almanac/properties/c/cursor/ */
+}
+.portfolio-modal .close-modal:hover {
+  opacity: .3
+}
+.portfolio-modal .close-modal .lr { /* Draws the upward sloping line */
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222; /* dark gray near black */
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 1051; /* Set it to a very high z-index, so that it will remain above other elements on the page */
+}
+.portfolio-modal .close-modal .lr .rl { /* Draws the downward sloping line */
+  height: 75px;
+  width: 1px;
+  background-color: #222; /* dark gray near black */
+  transform: rotate(90deg); /* Rotates only 90deg because it is the entire div that is rotating. It's parent div.lr has already rotated 45deg, therefore, the child div.rl has only to rotate another 90deg more to draw the downward sloping line! */
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  z-index: 1052
+}
+.portfolio-modal .modal-backdrop { /* .modal-backdrop is not defined in the html */
+  opacity: 0;
+  display: none
+}
+
+
+/* ==================== Find out what these definitions are for ==================== */
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136; /* lightest yellow */
+}
+
+::selection {
+  text-shadow: none;
+  background: #fed136; /* lightest yellow */
+}
+
+img::selection {
+  background: 0 0
+}
+
+img::-moz-selection {
+  background: 0 0
+}
+
+body {
+  webkit-tap-highlight-color: #fed136; /* lightest yellow */
+}
